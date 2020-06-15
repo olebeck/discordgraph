@@ -16,6 +16,7 @@ except FileNotFoundError:
 
 i = 0
 for item in out:
+    print(item)
     if i > 0:
         f.write(",")
     f.write(str(item))
