@@ -27,5 +27,8 @@ jobs:
     - name: run
       run: |
         python fetchdata.py
-    - name: action-push
-      uses: ludeeus/action-push@0.0.1
+
+    - name: GitHub Push
+      uses: ad-m/github-push-action@v0.6.0
+      with:
+        github_token: $\{{ secrets.GITHUB_TOKEN }}
