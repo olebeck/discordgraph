@@ -7,7 +7,7 @@ count = current["approximate_member_count"]
 online = current["approximate_presence_count"]
 time = datetime.now()
 
-out = [count,online,url,time]
+out = [count,online,"2ccAkg3",time]
 f = None
 try:
     f = open("data.csv","a")
